@@ -709,12 +709,11 @@
     
     body:not(.touch-styles) .nav-wrapper .folder .subnav {
         display: none;
-        position: fixed;
+        position: absolute;
         min-width: 100vw !important;
        // background: rgba(238, 238, 238, 0.8);
         top: 100%;
         left: 0;
-        right: 0;
         text-align: left;
         z-index: 9998;
         background-color: @bgColor;
@@ -747,6 +746,7 @@
       position: fixed;
       left: 0;
       right: 0;
+      margin-left: -10vw;
       // margin-right: 80vw !important;
       // border-radius: 20px 0 0 20px;
       // text-align: left !important;
