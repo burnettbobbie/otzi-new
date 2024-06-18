@@ -2,6 +2,37 @@
 /* ANIMATION STYLES
 -------------------------------------------------*/
 
+
+//fade in
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+//fade out
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+
 // moveup (slide up) when page is loaded
 
 @keyframes moveup {
