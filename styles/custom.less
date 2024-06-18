@@ -710,7 +710,7 @@
     body:not(.touch-styles) .nav-wrapper .folder .subnav {
         display: none;
         position: absolute;
-        width: 100vw;
+        min-width: 100vw;
        // background: rgba(238, 238, 238, 0.8);
         top: 100%;
         left: 0;
@@ -739,7 +739,7 @@
 
     .subnav {
      background: rgba(238, 238, 238, 0.9) !important;
-          min-height: 20vh;
+          min-height: fit-content;
           min-width: 100vw;
           margin-right: 80%;
           border-radius: 20px 0 0 20px;
