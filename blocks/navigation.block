@@ -47,8 +47,8 @@
 
               if (burger.classList.contains('opened')) {
                 burger.classList.remove('opened');
-                subnav.classList.remove('fadeIn');
-                subnav.classList.add('fadeOut');
+                subnav.classList.remove('fade-in');
+                subnav.classList.add('fade-out');
                 subnav.addEventListener('animationend', function() {
                   subnav.style.display = 'none';
                 }, { once: true });
@@ -56,8 +56,8 @@
               } else {
                 burger.classList.add('opened');
                 subnav.style.display = 'block';
-                subnav.classList.remove('fadeOut');
-                subnav.classList.add('fadeIn');
+                subnav.classList.remove('fade-out');
+                subnav.classList.add('fade-in');
                 label.setAttribute('aria-expanded', 'true');
               }
             });
