@@ -718,7 +718,6 @@
         background-color: @bgColor;
         padding: .5em 0;
         white-space: nowrap;
-        height: 30vh;
         .border-box;
         opacity: 1; /* Changed from 0 */
         .transition2(max-height @subNavOpacity + 100 ease-in-out 40ms, opacity @subNavOpacity ease-in-out 300ms);
@@ -737,7 +736,6 @@
 
 .nav-item.folder{
   width:100vw;
-  height: 30vh;
 }
     .subnav {
      background: rgba(238, 238, 238, 0.9) !important;
@@ -749,13 +747,14 @@
       margin-left: -55vw;
       white-space: nowrap; 
       overflow-x: auto;
-      // height: 10vh;
+      height: 30vh;
       margin-top: 0vh;
     }
     
     .subnav > .collection{
       display: inline-block;
       margin-right: 20px;
+      height: 20vh;
 
     }
     
