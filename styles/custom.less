@@ -737,45 +737,88 @@
   }
   
 
+    // .subnav {
+    //  background: rgba(238, 238, 238, 0.9) !important;
+    //       min-height: 60vh;
+    //       border-radius: 20px 0 0 20px;
+    //       text-align: left !important;
+    //   top: 33vh !important;
+    
+    // }
+    
+    // .subnav > .collection{
+    //     //margin-bottom: 10vh;
+    //   margin-top: 15vh;
+    //   position: sticky !important;
+    
+    
+    // }
+    
+    // .subnav > .collection > a{
+    //   background-color: rgba(194, 130, 52, 0.8) !important;
+    //   padding: 10px 10px 10px 20px !important;
+    //   color: white !important;
+    //   margin-bottom: 10vh;
+    //   width: 15vw;
+    //   margin-left: 2vw;
+    //   margin-right:5vw !important;
+    //   border-radius: 10px;
+    // }
+    
+    // .subnav > .collection >a:hover{
+    //   transform: translateX(-50px);
+    //   transition: transform 0.5s ease;
+    //   background-color: rgb(248, 174, 84) !important;
+    //   color: white !important;
+    // }
+    
+    // .subnav > .collection >a:not(:hover){
+    //   transform: translateX(-10px);
+    //   transition: transform 0.5s ease;
+    // }
+
     .subnav {
-     background: rgba(238, 238, 238, 0.9) !important;
-          min-height: 60vh;
-          border-radius: 20px 0 0 20px;
-          text-align: left !important;
-      top: 33vh !important;
-    
-    }
-    
-    .subnav > .collection{
-        //margin-bottom: 10vh;
-      margin-top: 15vh;
-      position: sticky !important;
-    
-    
-    }
-    
-    .subnav > .collection > a{
-      background-color: rgba(194, 130, 52, 0.8) !important;
-      padding: 10px 10px 10px 20px !important;
-      color: white !important;
-      margin-bottom: 10vh;
-      width: 15vw;
-      margin-left: 2vw;
-      margin-right:5vw !important;
-      border-radius: 10px;
-    }
-    
-    .subnav > .collection >a:hover{
-      transform: translateX(-50px);
-      transition: transform 0.5s ease;
-      background-color: rgb(248, 174, 84) !important;
-      color: white !important;
-    }
-    
-    .subnav > .collection >a:not(:hover){
-      transform: translateX(-10px);
-      transition: transform 0.5s ease;
-    }
+      background: rgba(238, 238, 238, 0.9) !important; /* Light gray background */
+      min-height: 60vh;
+      border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+      text-align: left !important;
+      position: fixed;
+      top: 100px; /* Adjust this value based on your header height */
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 80%; /* Adjust width as needed */
+      z-index: 1000; /* Ensure it appears above other content */
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .subnav > .collection {
+      margin-top: 20px;
+      position: relative; /* Changed from sticky to relative */
+  }
+  
+  .subnav > .collection > a {
+      background-color: rgba(119, 136, 153, 0.8) !important; /* Slate gray background */
+      padding: 10px 20px !important;
+      color: #fff !important; /* White text color */
+      margin-bottom: 10px;
+      display: block; /* Make links block elements for better spacing */
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+  }
+  
+  .subnav > .collection > a:hover {
+      background-color: rgba(105, 105, 105, 1) !important; /* Darker gray on hover */
+      color: #fff !important;
+      transform: translateX(-10px); /* Slightly translate on hover */
+  }
+  
+  .subnav > .collection > a:not(:hover) {
+      transform: translateX(0);
+  }
+  
     
     
     //lOGO INTERACTIONS
