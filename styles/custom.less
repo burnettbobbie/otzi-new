@@ -650,12 +650,6 @@
     // max-height: 18vh;
     width: 100vw !important;
     z-index: 9998;
-    background-color: transparent !important;
-    background: linear-gradient(120deg,
-    rgba(255, 255, 0, 0.2) 30%,
-    rgba(255, 255, 0, 0.2) 50%,
-    rgba(250, 233, 250, 0.2) 80%) !important;
-    animation: shimmer 5s infinite linear;
     
     }
     
@@ -761,13 +755,21 @@
     vertical-align: middle;
     margin-bottom: 5vh;
     background-color: transparent !important;
-  
-  }
+       /* adding gradients */
+   -webkit-mask: linear-gradient(120deg, #000 25%, #0005, #000 75%) right/250% 100%;
+   /* shimmer effect animation */
+   animation: shimmer 2.5s infinite;
+   background-repeat: no-repeat;
+   width: 500px;
+}
 
-  @keyframes shimmer {
-    from {transform: translateX(-230%);}
-    to {transform: translateX(230%);}
- }
+
+@keyframes shimmer {
+   100% {
+      /* setting up mask position at left side */
+      -webkit-mask-position: left
+   }
+}
   
   .subnav > .collection{
     display: inline-block;
