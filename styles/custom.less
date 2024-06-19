@@ -736,6 +736,11 @@
   width:100vw;
   // text-align: center;
   background-color: transparent !important;
+  background: linear-gradient(120deg,
+  rgba(255, 255, 0, 0.2) 30%,
+  rgba(255, 255, 0, 0.2) 50%,
+  rgba(255, 0, 255, 0.2) 80%) !important;
+  animation: shimmer 2s infinite linear;
 }
   .subnav {
     // background: rgba(255, 255, 255, 0.7) !important;
@@ -754,11 +759,8 @@
     text-align: center; 
     vertical-align: middle;
     margin-bottom: 5vh;
-    background: linear-gradient(120deg,
-    rgba(255, 255, 0, 0.2) 30%,
-    rgba(255, 255, 0, 0.2) 50%,
-    rgba(255, 0, 255, 0.2) 80%) !important;
-    animation: shimmer 2s infinite linear;
+    background-color: transparent !important;
+  
   }
 
   @keyframes shimmer {
