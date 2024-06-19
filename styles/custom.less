@@ -758,12 +758,6 @@
 }
 
 
-@keyframes shimmer {
-   100% {
-      /* setting up mask position at left side */
-      mask-position: left
-   }
-}
   
   .subnav > .collection{
     display: inline-block;
@@ -771,19 +765,14 @@
     vertical-align: middle;
     text-align: center;
     justify-items: center;
-          /* adding gradients */
-   mask: linear-gradient(120deg, #000000 25%, rgb(255, 255, 255), #000 75%) right/250% 100%;
-   /* shimmer effect animation */
-   animation: shimmer 5s infinite;
-   background-repeat: no-repeat;
-   width: 500px;
 
   }
   
   .subnav > .collection > a{
 
-    color: transparent !important;
+    color: #b4b4b4 !important;
     width: 40vw;
+    text-shadow: 1px 1px 1px black;
     align-content: center;
     justify-items: center;
     justify-self: center;
