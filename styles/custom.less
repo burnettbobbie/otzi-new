@@ -736,23 +736,37 @@
 
 .nav-item.folder{
   width:100vw;
-  text-align: center;
+  // text-align: center;
+  display: flex;
+    justify-content: center; /* Center the subnav horizontally */
+    position: fixed;
+    top: 100px; /* Adjust this value based on your header height */
+    z-index: 1000;
 }
   .subnav {
     // background: rgba(255, 255, 255, 0.7) !important;
     width: 100%;
     z-index: 1000; 
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin-left: -58vw;
-    white-space: nowrap; 
-    overflow-x: auto;
-    min-height: 50px;
-    height: auto;
-    margin-top: -3vh;
-    text-align: center; 
-    vertical-align: middle;
+    // position: fixed;
+    // left: 0;
+    // right: 0;
+    // margin-left: -58vw;
+    // white-space: nowrap; 
+    // overflow-x: auto;
+    // min-height: 50px;
+    // height: auto;
+    // margin-top: -3vh;
+    // text-align: center; 
+    // vertical-align: middle;
+    padding: 20px 40px; /* Adjust the padding for more space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    white-space: nowrap; /* Prevent line breaks, children will be in a row */
+    overflow-x: auto; /* Add horizontal scrolling if needed */
+    min-height: 60px; /* Ensure the subnav is not too thin */
+    display: grid; /* Use grid layout */
+    grid-auto-flow: column; /* Arrange children in a row */
+    grid-gap: 20px; /* Space between items */
+    align-items: center; /* Vertically align items */
   }
   
   .subnav > .collection{
