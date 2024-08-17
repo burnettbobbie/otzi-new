@@ -91,18 +91,23 @@
 </nav>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var currentPath = window.location.pathname; 
-    var indexNavLink = document.querySelector('a[href="/projects"]'); // Adjust this to your index link href
+    // Get the current path of the URL
+    var currentPath = window.location.pathname;
+
+    // Select the main nav link for the Projects index page
+    var indexNavLink = document.querySelector('a[href="/projects"]');
 
     if (indexNavLink) {
-      // Check if the current URL path starts with the index page URL
+      // Check if the current URL path starts with "/projects"
       if (currentPath.startsWith("/projects")) {
+        // Add the 'active-parent' class to the index link and its parent div
         indexNavLink.classList.add("active-parent");
         indexNavLink.parentElement.classList.add("active");
       }
     }
   });
 </script>
+
 
 {.end}
 
