@@ -91,15 +91,18 @@
 </nav>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Get the current path of the URL
-    var currentPath = window.location.pathname;
-
+    // Get the full current URL
+    var currentUrl = window.location.href;
+    
+    // Full URL of the Projects page
+    var projectsUrl = "https://www.otzi.ltd/projects";
+    
     // Select the main nav link for the Projects index page
     var indexNavLink = document.querySelector('a[href="/projects"]');
 
     if (indexNavLink) {
-      // Check if the current URL path starts with "/projects"
-      if (currentPath.startsWith("/projects")) {
+      // Check if the current URL matches the full URL of the Projects page
+      if (currentUrl.startsWith(projectsUrl)) {
         // Add the 'active-parent' class to the index link and its parent div
         indexNavLink.classList.add("active-parent");
         indexNavLink.parentElement.classList.add("active");
@@ -107,6 +110,7 @@
     }
   });
 </script>
+
 
 
 
