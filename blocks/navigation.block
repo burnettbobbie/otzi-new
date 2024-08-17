@@ -89,6 +89,20 @@
     {.end}
   {.end}  
 </nav>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentPath = window.location.pathname; 
+    var indexNavLink = document.querySelector('a[href="/projects"]'); // Adjust this to your index link href
+
+    if (indexNavLink) {
+      // Check if the current URL path starts with the index page URL
+      if (currentPath.startsWith("/projects")) {
+        indexNavLink.classList.add("active-parent");
+        indexNavLink.parentElement.classList.add("active");
+      }
+    }
+  });
+</script>
 
 {.end}
 

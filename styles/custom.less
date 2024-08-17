@@ -645,39 +645,69 @@ footer{
   color: white !important;
 }
 
+// .primary-nav-wrapper nav {
+//     // margin-left:5vw;
+//    .primary-nav-font{
+//    line-height: 1em;
+//    }
+ 
+//    a:link,
+//    a:visited,
+//    .folder-toggle-label {
+//      color: @primaryNavColor;
+//     //  padding-left: 6px;
+//     //  padding-top: 8px;
+//     //  padding-bottom: 4px;
+//    }
+ 
+//    a:hover,
+//    a:active,
+//    .active > a {
+//      color: @primaryNavActiveColor;
+//      padding-left: 4px;
+//      border-left: 2px orange solid;//TRY TO APPLY THIS TO CHILD PAGES TOO
+ 
+//    }
+//  }
 .primary-nav-wrapper nav {
-    // margin-left:5vw;
-   .primary-nav-font{
-   line-height: 1em;
-   }
- 
-   a:link,
-   a:visited,
-   .folder-toggle-label {
-     color: @primaryNavColor;
-    //  padding-left: 6px;
-    //  padding-top: 8px;
-    //  padding-bottom: 4px;
-   }
- 
-   a:hover,
-   a:active,
-   .active > a {
-     color: @primaryNavActiveColor;
-     padding-left: 4px;
-     border-left: 2px orange solid;//TRY TO APPLY THIS TO CHILD PAGES TOO
- 
-   }
-       /* NEW: Target the parent page (index) when a child page is active */
-       .active > a, /* For the active page */
-       .folder.active > a, 
-       .folder.subpage.active > a, /* For subpages of the active folder */
-       .folder.active > .folder-toggle-label  {
-           color: @primaryNavActiveColor;
-           padding-left: 4px;
-           border-left: 2px orange solid !important;
-       }
- }
+  // margin-left: 5vw;
+  .primary-nav-font {
+      line-height: 1em;
+  }
+
+  a:link,
+  a:visited,
+  .folder-toggle-label {
+      color: @primaryNavColor;
+      // padding-left: 6px;
+      // padding-top: 8px;
+      // padding-bottom: 4px;
+  }
+
+  a:hover,
+  a:active,
+  .active > a {
+      color: @primaryNavActiveColor;
+      padding-left: 4px;
+      border-left: 2px orange solid;
+  }
+
+  /* Ensure that parent (index) link is highlighted when a child page is active */
+  .folder.active > a,
+  .folder.active .subpage.active > a {
+      color: @primaryNavActiveColor;
+      padding-left: 4px;
+      border-left: 2px orange solid;
+  }
+
+  /* General rule for highlighting the index page link when on any child page */
+  .active-parent > a {
+      color: @primaryNavActiveColor;
+      padding-left: 4px;
+      border-left: 2px orange solid;
+  }
+}
+
 
     //GENEREAL
     header{
