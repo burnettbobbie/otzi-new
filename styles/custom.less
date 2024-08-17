@@ -668,6 +668,15 @@ footer{
      border-left: 2px orange solid;//TRY TO APPLY THIS TO CHILD PAGES TOO
  
    }
+       /* NEW: Target the parent page (index) when a child page is active */
+       .active > a, /* For the active page */
+       .folder .active > a, /* For the active folder (index) */
+       .folder .subpage .active > a, /* For subpages of the active folder */
+       .folder .active > .folder-toggle-label /* Folder toggle label if present */ {
+           color: @primaryNavActiveColor;
+           padding-left: 4px;
+           border-left: 2px orange solid;
+       }
  }
 
     //GENEREAL
