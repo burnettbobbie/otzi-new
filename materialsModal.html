@@ -24,331 +24,334 @@
           <button onclick="showTab('tab3')">Timbers</button>
           <button onclick="showTab('tab4')">Customisations</button>
         </div>
-      <div class="card-body" style="margin: 2em;">       
-        <style>
-                
-        .tab-navigation {
-          display: flex;
-          justify-content: space-between;
-          margin: 0.5rem 0 3rem 0;
-          /* border-bottom: 2px solid #ddd; */
-        }
-
-        .tab-navigation button {
-          flex: 1;
-          padding: 10px;
-          cursor: pointer;
-          background: none;
-          border: none;
-          border-bottom: 2px solid transparent;
-          font-size: 1em;
-          transition: border-bottom 0.3s;
-          font-family: 'Founders';
-        }
-
-        .tab-navigation button.active {
-          border-bottom: 2px solid #da671b;
-        }
-
-        .tab-content {
-          display: none;
-        }
-
-        .tab-content.active {
-          display: block;
-        }
-
-        blockquote{
-          font-style:normal;
-        }
-
-        table {
-          border-collapse: collapse;
-          /* width: 95%; */
-          padding: 5px !important;
-          color: rgb(11, 11, 11);
-          border-spacing: 0;
-        }
-
-        .table-header{
-          text-align: center;
-          font-family: 'Bic C';
-          font-size: 18px !important;
-          padding: 2rem;
-        }
-
-        td {
-          text-wrap: wrap;  
-          padding: 1rem;
-          border: 0px solid #8583835a;
-          font-weight: 400;
-        }
-
-        figure{
-          /* background-color: black; */
-          object-fit: cover;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-        }
-
-        figcaption{
-          /* color: white; */
-          font-size: 14px;
-          font-family: 'Founders';
-          text-align: center;
-        }
-
-
-        .no-table-border>{
-          border: none;
-        }
-            /* Media Queries */
-        @media (max-width: 768px) {
-          table, th, td {
-            display: block;
-            width: 100%;
-          }
-
-          td {
-            padding: 10px;
-            text-align: left;
-          }
-
-          figure > img {
-            width: 100%;
-          }
+        <div class="card-body" style="margin: 2em;">       
+          <style>
+                  
           .tab-navigation {
-            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0 3rem 0;
+            /* border-bottom: 2px solid #ddd; */
           }
 
           .tab-navigation button {
-            width: 100%;
-            margin-bottom: 5px;
+            flex: 1;
+            padding: 10px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            font-size: 1em;
+            transition: border-bottom 0.3s;
+            font-family: 'Founders';
           }
 
-      
-        }
+          .tab-navigation button.active {
+            border-bottom: 2px solid #da671b;
+          }
 
-        @media (max-width: 480px) {
-          table, th, td {
+          .tab-content {
+            display: none;
+          }
+
+          .tab-content.active {
             display: block;
-            width: 100%;
+          }
+
+          blockquote{
+            font-style:normal;
+          }
+
+          table {
+            border-collapse: collapse;
+            /* width: 95%; */
+            padding: 5px !important;
+            color: rgb(11, 11, 11);
+            border-spacing: 0;
+          }
+
+          .table-header{
+            text-align: center;
+            font-family: 'Bic C';
+            font-size: 18px !important;
+            padding: 2rem;
           }
 
           td {
-            padding: 5px;
-            text-align: left;
+            text-wrap: wrap;  
+            padding: 1rem;
+            border: 0px solid #8583835a;
+            font-weight: 400;
           }
 
-          figure > img {
-            width: 100%;
+          figure{
+            /* background-color: black; */
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
           }
 
-          .leather-desc {
-            width: 100%;
+          figcaption{
+            /* color: white; */
+            font-size: 14px;
+            font-family: 'Founders';
+            text-align: center;
           }
-        }
-        </style>
-          
-        <div class="tab-content active" id="tab1">
-          <br>
-          <table>
-            <tbody>
-                <tr>   
-                  <td  class="table-header" colspan="1" style="">European <Strong>vegetable-tanned leather</Strong> shoulders for all bins
-                  </td>                   
-                  <td class="table-header" colspan="1" >Oak bark tanned <strong>bridle leather</strong> from traditional British tannery J & F J Baker for all baskets, trays, and all non-upholstered furniture
-                  </td>               
-                </tr>
-                <tr>
-                  <td colspan="1" width="50%">
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/d2ab88c3-393a-4bd9-b56c-05fb4129f9fe/Vegetable+tanned+leather.jpeg?content-type=image%2Fjpeg" alt="Natural" height="800"/>
-                      <figcaption>From bottom: Nude, Light Tan, Medium Tan, Burgundy, Green, Navy and Black</figcaption>
-                    </figure>
-                  </td>  
-                  <td colspan="1" width="">
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/3d2cc86b-8320-476b-93fc-add44bbaf841/Oak+bark+tanned+bridle+leather.jpeg?content-type=image%2Fjpeg" alt="Russet" height="800"/>
-                      <figcaption>From bottom: Natural Russet, London Tan, Australian Nut and Liquroice Black</figcaption>
-                    </figure>
-                  </td>            
-                </tr>
 
-                <tr>
-                  <td>
-                    <br><br><br>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td class="table-header" colspan="2" style="text-align: center;"><strong>Olive-tanned upholstery leather</strong> from Leder Fiedler in Germany for any upholstered furniture
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/2cfad55c-c977-4c91-bd7b-b5dfe809f7ef/AF9C6159-8DAB-4074-A819-AD9E562504A4_1_105_c.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
-                      <figcaption>Tan</figcaption>
-                    </figure> 
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/v1/64a317d5040ac50aa81f3722/8f92a662-0a78-4156-a949-f9b05d82a54a/DSCF4239.JPG?format=1500w" alt="Natural" width="100%" />
-                      <figcaption>Swatches can be sent at your <a href="mailto:studio@otzi.ltd?subject=Swatches">request</a></figcaption>
-                    </figure>   
-              
+
+          .no-table-border>{
+            border: none;
+          }
+              /* Media Queries */
+          @media (max-width: 768px) {
+            table, th, td {
+              display: block;
+              width: 100%;
+            }
+
+            td {
+              padding: 10px;
+              text-align: left;
+            }
+
+            figure > img {
+              width: 100%;
+            }
+            .tab-navigation {
+              flex-direction: column;
+            }
+
+            .tab-navigation button {
+              width: 100%;
+              margin-bottom: 5px;
+            }
+
+        
+          }
+
+          @media (max-width: 480px) {
+            table, th, td {
+              display: block;
+              width: 100%;
+            }
+
+            td {
+              padding: 5px;
+              text-align: left;
+            }
+
+            figure > img {
+              width: 100%;
+            }
+
+            .leather-desc {
+              width: 100%;
+            }
+          }
+          </style>
+            
+          <div class="tab-content active" id="tab1">
+            <br>
+            <table>
+              <tbody>
+                  <tr>   
+                    <td  class="table-header" colspan="1" style="">European <Strong>vegetable-tanned leather</Strong> shoulders for all bins
+                    </td>                   
+                    <td class="table-header" colspan="1" >Oak bark tanned <strong>bridle leather</strong> from traditional British tannery J & F J Baker for all baskets, trays, and all non-upholstered furniture
+                    </td>               
+                  </tr>
+                  <tr>
+                    <td colspan="1" width="50%">
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/d2ab88c3-393a-4bd9-b56c-05fb4129f9fe/Vegetable+tanned+leather.jpeg?content-type=image%2Fjpeg" alt="Natural" height="800"/>
+                        <figcaption>From bottom: Nude, Light Tan, Medium Tan, Burgundy, Green, Navy and Black</figcaption>
+                      </figure>
+                    </td>  
+                    <td colspan="1" width="">
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/3d2cc86b-8320-476b-93fc-add44bbaf841/Oak+bark+tanned+bridle+leather.jpeg?content-type=image%2Fjpeg" alt="Russet" height="800"/>
+                        <figcaption>From bottom: Natural Russet, London Tan, Australian Nut and Liquroice Black</figcaption>
+                      </figure>
+                    </td>            
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <br><br><br>
                     </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="table-header" colspan="2" style="text-align: center;"><strong>Olive-tanned upholstery leather</strong> from Leder Fiedler in Germany for any upholstered furniture
+                    </td>
+                  </tr>
+                  <tr>
                     <td>
                       <figure>
-                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/66fa8d75-de4a-48d5-9a5d-211fd4dbfe4b/Vegetable+tanned+leather+selection%281%29.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/2cfad55c-c977-4c91-bd7b-b5dfe809f7ef/AF9C6159-8DAB-4074-A819-AD9E562504A4_1_105_c.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
+                        <figcaption>Tan</figcaption>
+                      </figure> 
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/v1/64a317d5040ac50aa81f3722/8f92a662-0a78-4156-a949-f9b05d82a54a/DSCF4239.JPG?format=1500w" alt="Natural" width="100%" />
                         <figcaption>Swatches can be sent at your <a href="mailto:studio@otzi.ltd?subject=Swatches">request</a></figcaption>
+                      </figure>   
+                
+                      </td>
+                      <td>
+                        <figure>
+                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/66fa8d75-de4a-48d5-9a5d-211fd4dbfe4b/Vegetable+tanned+leather+selection%281%29.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
+                          <figcaption>Swatches can be sent at your <a href="mailto:studio@otzi.ltd?subject=Swatches">request</a></figcaption>
+                        </figure>    
+                        <figure>
+                          <img src="https://images.squarespace-cdn.com/content/v1/64a317d5040ac50aa81f3722/f00ffa7f-0cf9-4ca3-a0c6-ffe03b7ca73c/camber+in+black+and+fumed+oak+arm+detail.JPG?format=1500w" alt="Natural" width="100%" />
+                          <figcaption>Black</figcaption>
+                        </figure> 
+                      
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <br><br><br>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="1" class="table-header">Curly shearling <strong>sheepskin</strong> for any upholstered furniture
+                    </td>
+                    <td colspan="1" class="table-header" >British wild deer <strong>suede</strong> from Billy Tannery for any upholstered furniture
+                    </td>              
+                  </tr>                                        
+                  <tr>
+                    <td colspan="">
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/c19a45c9-fdf4-4dd7-aa57-58c8db3bdc89/Ecru+Shearling.jpeg?content-type=image%2Fjpeg" alt="Ecru" width="100%"/>
+                        <figcaption>Ecru</figcaption>
+                      </figure>  
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/456efb55-9e12-47fe-855c-02dd1d3e0b5b/Taupe+shearling.jpeg?content-type=image%2Fjpeg" alt="Taupe" width="100%"/>
+                        <figcaption>Taupe</figcaption>
+                      </figure>                                  
+                    </td>
+                    <td rowspan="">
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/30a0daa8-52aa-47e0-83fb-405e190c8adf/Wild+Deer+Suede.jpeg?content-type=image%2Fjpeg" alt="Taupe, Black and Brown Suede" width="100%"/>
+                        <figcaption>Taupe, Brown and Black</figcaption>
                       </figure>    
                       <figure>
-                        <img src="https://images.squarespace-cdn.com/content/v1/64a317d5040ac50aa81f3722/f00ffa7f-0cf9-4ca3-a0c6-ffe03b7ca73c/camber+in+black+and+fumed+oak+arm+detail.JPG?format=1500w" alt="Natural" width="100%" />
-                        <figcaption>Black</figcaption>
-                      </figure> 
-                     
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <br><br><br>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="1" class="table-header">Curly shearling <strong>sheepskin</strong> for any upholstered furniture
-                  </td>
-                  <td colspan="1" class="table-header" >British wild deer <strong>suede</strong> from Billy Tannery for any upholstered furniture
-                  </td>              
-                </tr>                                        
-                <tr>
-                  <td colspan="">
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/c19a45c9-fdf4-4dd7-aa57-58c8db3bdc89/Ecru+Shearling.jpeg?content-type=image%2Fjpeg" alt="Ecru" width="100%"/>
-                      <figcaption>Ecru</figcaption>
-                    </figure>  
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/456efb55-9e12-47fe-855c-02dd1d3e0b5b/Taupe+shearling.jpeg?content-type=image%2Fjpeg" alt="Taupe" width="100%"/>
-                      <figcaption>Taupe</figcaption>
-                    </figure>                                  
-                  </td>
-                  <td rowspan="">
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/30a0daa8-52aa-47e0-83fb-405e190c8adf/Wild+Deer+Suede.jpeg?content-type=image%2Fjpeg" alt="Taupe, Black and Brown Suede" width="100%"/>
-                      <figcaption>Taupe, Brown and Black</figcaption>
-                    </figure>    
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/4370ddd8-fc96-4071-96b6-0224cfa62764/DSCF4050.jpeg?content-type=image%2Fjpeg" width="100%"/>
-                      <figcaption>Suede Mesa Daybed</figcaption>
-                    </figure>  
-                                              
-                  </td>               
-                </tr>          
-                    
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/4370ddd8-fc96-4071-96b6-0224cfa62764/DSCF4050.jpeg?content-type=image%2Fjpeg" width="100%"/>
+                        <figcaption>Suede Mesa Daybed</figcaption>
+                      </figure>  
+                                                
+                    </td>               
+                  </tr>          
                       
-                
-            </tbody>
-          </table>
-        </div>
-  
-        <div class="tab-content" id="tab2">
-          <blockquote style="text-align: left;">Linen or linen/wool mix for all upholstered furniture in a variety of colors and articles</blockquote>
-          <table>
-            <tbody>
-                <tr>                      
-                  <td class="table-header" colspan="1" style="text-align: left;">Oak bark tanned <strong>bridle leather</strong> from traditional British tannery J & F J Baker for all baskets, trays, and all non-upholstered furniture
-                  </td>
-                  <td  class="table-header" colspan="1" style="text-align: center;">European <Strong>vegetable-tanned leather</Strong> shoulders for all bins
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="1" width="50%">
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/da22d7ba-49f1-4e17-ad60-381e71e8217f/Heavyweight+linen+.jpeg?content-type=image%2Fjpeg" alt="Russet" width="100%"/>
-                      <figcaption>From bottom: Natural Russet, London Tan, Australian Nut and Liquroice Black</figcaption>
-                    </figure>
-                  </td>
-                  <td colspan="1" width="50%">
-                    <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/3314829e-ded9-4244-a33a-4f78d274e855/Linen+Wool+Mix.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
-                      <figcaption>From bottom: Nude, Light Tan, Medium Tan, Burgundy, Green, Navy and Black</figcaption>
-                    </figure>
-                  </td>              
-                </tr>
-                </tbody>
-                </table>
-        </div>        
+                        
+                  
+              </tbody>
+            </table>
+          </div>
+    
+          <div class="tab-content" id="tab2">
 
-        <div class="tab-content" id="tab3">
-          <h2 style="text-align: center;">Locally and sustainably sourced native timbers</h2>
-          <br>
-          <div style="position: relative; overflow: hidden; width: 100%; max-width: 800px; margin: 0;">
-              <div id="carousel" style="display: flex; margin:0;overflow-x: hidden; scroll-behavior: smooth; padding:0; scroll-snap-type: x mandatory;">
-                  <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
+            <table>
+              <tbody>
+                  <tr>                      
+                    <td class="table-header" colspan="1" >Heavyweight Linen
+                    </td>
+                    <td  class="table-header" colspan="1">Linen and Wool Mix
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" width="50%">
                       <figure>
-                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/1f50942a-e3cd-4302-ba08-144aecef2161/Oak.jpeg?content-type=image%2Fjpeg" width="100%" alt="Ash" />
-                          <figcaption>Oak</figcaption>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/da22d7ba-49f1-4e17-ad60-381e71e8217f/Heavyweight+linen+.jpeg?content-type=image%2Fjpeg" alt="Russet" width="100%"/>
+                        <!-- <figcaption>From bottom: Natural Russet, London Tan, Australian Nut and Liquroice Black</figcaption> -->
                       </figure>
-                  </div>
-                  <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
+                    </td>
+                    <td colspan="1" width="50%">
                       <figure>
-                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/3c224416-b328-4454-bc82-36fe94a3d716/Fumed+Oak.jpeg?content-type=image%2Fjpeg" width="100%" alt="Scorched Ash" />
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/3314829e-ded9-4244-a33a-4f78d274e855/Linen+Wool+Mix.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
+                        <!-- <figcaption>From bottom: Nude, Light Tan, Medium Tan, Burgundy, Green, Navy and Black</figcaption> -->
+                      </figure>
+                    </td>              
+                  </tr>
+                  </tbody>
+            </table>
+          </div>        
+
+          <div class="tab-content" id="tab3">
+            <br>
+            <table>
+              <tbody>
+                  <tr>
+                    <td class="table-header" colspan="2" style="text-align: center;"><strong>Locally and sustainably sourced</strong> native timbers
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/1f50942a-e3cd-4302-ba08-144aecef2161/Oak.jpeg?content-type=image%2Fjpeg" alt="Oak" width="100%" />
+                        <figcaption>Oak</figcaption>
+                      </figure> 
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/a1c81641-8aae-4a68-b082-f095a450e56e/Ash.jpeg?content-type=image%2Fjpeg" alt="Ash" width="100%" />
+                        <figcaption>Ash</figcaption>
+                      </figure>   
+                      </td>
+                      <td>
+                        <figure>
+                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/008ef4d3-74ea-4b09-b0a4-34cb2e74263f/Scorched+Ash.jpeg?content-type=image%2Fjpeg" alt="Scorched Ash" width="100%" />
+                          <figcaption>Scorched Ash</figcaption>
+                        </figure> 
+                        <figure>
+                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/3c224416-b328-4454-bc82-36fe94a3d716/Fumed+Oak.jpeg?content-type=image%2Fjpeg" alt="Fumed Oak" width="100%" />
                           <figcaption>Fumed Oak</figcaption>
-                      </figure>
-                  </div>
-                  <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
+                        </figure>   
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                       <figure>
-                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/a1c81641-8aae-4a68-b082-f095a450e56e/Ash.jpeg?content-type=image%2Fjpeg" width="100%" alt="Elm" />
-                          <figcaption>Ash</figcaption>
-                      </figure>
-                  </div>
-                  <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
-                    <figure>
-                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/008ef4d3-74ea-4b09-b0a4-34cb2e74263f/Scorched+Ash.jpeg?content-type=image%2Fjpeg" width="100%" alt="Elm" />
-                        <figcaption>Scorched Ash</figcaption>
-                    </figure>
-                </div>        <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
-                  <figure>
-                      <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/27310f85-f773-4e88-b23c-d5c51867f63a/Elm.jpeg?content-type=image%2Fjpeg" width="100%" alt="Elm" />
-                      <figcaption>Elm</figcaption>
-                  </figure>
-              </div>
-                  <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/27310f85-f773-4e88-b23c-d5c51867f63a/Elm.jpeg?content-type=image%2Fjpeg" alt="Elm" width="100%" />
+                        <figcaption>Elm</figcaption>
+                      </figure> 
                       <figure>
-                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/16a35d5e-bd78-44d4-94c8-8ff6d27f743b/Sycamore.jpeg?content-type=image%2Fjpeg" width="100%" alt="Walnut" />
-                          <figcaption>Sycamore</figcaption>
-                      </figure>
-                  </div>
-                  <div style="flex: 0 0 100%; scroll-snap-align: start; text-align: center;">
-                    <figure>
-                        <img src="" width="100%" alt="Walnut" />
-                        <figcaption>Walnut</figcaption>
-                    </figure>
-                </div>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/bb433b08-6803-4979-9374-c67e299c9618/London+Plane.jpeg?content-type=image%2Fjpeg" alt="London Plane" width="100%" />
+                        <figcaption>London Plane</figcaption>
+                      </figure>   
                 
-              </div>
-      
-              <!-- Navigation buttons -->
-              <a href="#prev" onclick="document.getElementById('carousel').scrollBy(-800, 0); return false;" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; padding: 10px; text-decoration: none;">&#10094;</a>
-              <a href="#next" onclick="document.getElementById('carousel').scrollBy(800, 0); return false;" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; padding: 10px; text-decoration: none;">&#10095;</a>
+                      </td>
+                      <td>
+                        <figure>
+                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/16a35d5e-bd78-44d4-94c8-8ff6d27f743b/Sycamore.jpeg?content-type=image%2Fjpeg" alt="Sycamore" width="100%" />
+                          <figcaption>Sycamore</figcaption>
+                        </figure>    
+                        <!-- <figure>
+                          <img src="" alt="Walnut" width="100%" />
+                          <figcaption>Walnut</figcaption>
+                        </figure>  -->
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+    
+            
+          <div class="tab-content" id="tab4">
+            <p style="text-align: center;">If you have any inquiries about bespoke colors or timber finishes, please don't hesitate to <a href="mailto:studio@otzi.ltd?subject=Bespoke Enquiry"><u>contact us</u></a>. We are also happy to accommodate the use of customers' own materials for upholstery.</p>
+
+            <p style="font-weight: 800; text-align: center;">We are pleased to provide sample packs and individual samples upon request. Please <a href="mailto:studio@otzi.ltd?subject=Sample Request"><u>enquire here</u></a> to have them sent to you.</p>
           </div>
         </div>
-          
-        <div class="tab-content" id="tab4">
-          <blockquote style="text-align: left;">CUSTOMISATIONS</blockquote>
-          <p style="text-align: left;">Please <a href="mailto:studio@otzi.ltd?subject=Enquiry"><u>get in touch</u></a> if you would like to discuss any bespoke colors or timber finishes. We are happy to use customer's own materials for upholstery.</p>
-          <p style="font-weight: 800; text-align: center;">We are happy to send out samples and sample packs. Please inquire if you would like samples sent to you.</p>
-        </div>
-      </div>
 
-      <div class="card-footer">
-        <label for="modal2" class="item action">
-            Close
-        </label>
-      </div>
+        <div class="card-footer">
+          <label for="modal2" class="item action">
+              Close
+          </label>
+        </div>
       </div>
     </div>
 </div>
