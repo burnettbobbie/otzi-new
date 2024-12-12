@@ -7,10 +7,10 @@
 </head>
 <body>
 
-<div class="modal2">
+  <div class="modal2">
     <input type="checkbox" class="modal-trigger2" id="modal2">
     <label class="modal-overlay" for="modal2"></label>
-    <label class="care-button" for="modal2">Materials Guide</label>
+    <label class="care-button" for="modal2">Material Options</label>
     <div class="modal-container2">
       <div class="card">
         <div class="card-header">
@@ -35,6 +35,7 @@
             /* border-bottom: 2px solid #ddd; */
           }
 
+    
           .tab-navigation button {
             flex: 1;
             padding: 10px;
@@ -169,7 +170,7 @@
                   <tr>
                     <td colspan="1" width="50%">
                       <figure>
-                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/d2ab88c3-393a-4bd9-b56c-05fb4129f9fe/Vegetable+tanned+leather.jpeg?content-type=image%2Fjpeg" alt="Natural" height="800"/>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/5df5785e-07a7-409d-b845-0ba2fad12bf5/Untitled+%28400+x+600+px%29.png?content-type=image%2Fpng" alt="Natural" height="800"/>
                         <figcaption>From bottom: Nude, Light Tan, Medium Tan, Burgundy, Green, Navy and Black</figcaption>
                       </figure>
                     </td>  
@@ -205,7 +206,7 @@
                       </td>
                       <td>
                         <figure>
-                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/66fa8d75-de4a-48d5-9a5d-211fd4dbfe4b/Vegetable+tanned+leather+selection%281%29.jpeg?content-type=image%2Fjpeg" alt="Natural" width="100%" />
+                          <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/eac583a7-9ea4-4b0d-8ac0-18edd7eaba9b/Untitled+%28400+x+600+px%29+%282%29.png?content-type=image%2Fpng" alt="Selection of leathers" width="100%" />
                           <figcaption>Swatches can be sent at your <a href="mailto:studio@otzi.ltd?subject=Swatches">request</a></figcaption>
                         </figure>    
                         <figure>
@@ -223,33 +224,38 @@
                   </tr>
 
                   <tr>
-                    <td colspan="1" class="table-header">Curly shearling <strong>sheepskin</strong> for any upholstered furniture
-                    </td>
-                    <td colspan="1" class="table-header" >British wild deer <strong>suede</strong> from Billy Tannery for any upholstered furniture
-                    </td>              
+                    <td colspan="2" style="text-align:center;" class="table-header">Curly shearling <strong>sheepskin</strong> for any upholstered furniture
+                    </td>                          
                   </tr>                                        
                   <tr>
                     <td colspan="">
                       <figure>
-                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/c19a45c9-fdf4-4dd7-aa57-58c8db3bdc89/Ecru+Shearling.jpeg?content-type=image%2Fjpeg" alt="Ecru" width="100%"/>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/c19a45c9-fdf4-4dd7-aa57-58c8db3bdc89/Ecru+Shearling.jpeg?content-type=image%2Fjpeg" alt="Ecru" height="500"/>
                         <figcaption>Ecru</figcaption>
-                      </figure>  
-                      <figure>
-                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/456efb55-9e12-47fe-855c-02dd1d3e0b5b/Taupe+shearling.jpeg?content-type=image%2Fjpeg" alt="Taupe" width="100%"/>
-                        <figcaption>Taupe</figcaption>
-                      </figure>                                  
+                      </figure>                                               
                     </td>
+                    <td>
+                      <figure>
+                        <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/456efb55-9e12-47fe-855c-02dd1d3e0b5b/Taupe+shearling.jpeg?content-type=image%2Fjpeg" alt="Taupe" height="500"/>
+                        <figcaption>Taupe</figcaption>
+                      </figure>  
+                    </td>
+                    <tr>     
+                      <td colspan="2" class="table-header" style="text-align:center;">British wild deer <strong>suede</strong> from Billy Tannery for any upholstered furniture
+                      </td>  
+                    </tr>
                     <td rowspan="">
                       <figure>
                         <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/30a0daa8-52aa-47e0-83fb-405e190c8adf/Wild+Deer+Suede.jpeg?content-type=image%2Fjpeg" alt="Taupe, Black and Brown Suede" width="100%"/>
                         <figcaption>Taupe, Brown and Black</figcaption>
-                      </figure>    
+                      </figure>  
+                    </td>
+                    <td>  
                       <figure>
                         <img src="https://images.squarespace-cdn.com/content/64a317d5040ac50aa81f3722/4370ddd8-fc96-4071-96b6-0224cfa62764/DSCF4050.jpeg?content-type=image%2Fjpeg" width="100%"/>
                         <figcaption>Suede Mesa Daybed</figcaption>
                       </figure>  
-                                                
-                    </td>               
+                    </td>              
                   </tr>          
               </tbody>
             </table>
@@ -353,19 +359,43 @@
 </div>
 
 <script>
-  function showTab(tabId) {
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => {
-      tab.classList.remove('active');
+document.addEventListener("DOMContentLoaded", () => {
+    // Delegate event listeners for dynamically loaded elements
+    document.body.addEventListener("click", (event) => {
+        // Handle tab navigation
+        if (event.target.matches(".tab-navigation button")) {
+            const tabId = event.target.getAttribute("onclick").match(/'([^']+)'/)[1];
+            showTab(tabId);
+        }
     });
-    document.getElementById(tabId).classList.add('active');
+});
 
-    const buttons = document.querySelectorAll('.tab-navigation button');
-    buttons.forEach(button => {
-      button.classList.remove('active');
+// Function to show the selected tab
+function showTab(tabId) {
+    // Hide all tabs
+    document.querySelectorAll(".tab-content").forEach((tab) => {
+        tab.classList.remove("active");
     });
-    document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
-  }
+
+    // Remove active state from all buttons
+    document.querySelectorAll(".tab-navigation button").forEach((button) => {
+        button.classList.remove("active");
+    });
+
+    // Show the selected tab
+    const activeTab = document.getElementById(tabId);
+    if (activeTab) {
+        activeTab.classList.add("active");
+    }
+
+    // Set the clicked button as active
+    const activeButton = Array.from(document.querySelectorAll(".tab-navigation button"))
+        .find((button) => button.getAttribute("onclick").includes(tabId));
+    if (activeButton) {
+        activeButton.classList.add("active");
+    }
+}
+
 </script>
 
 </body>
